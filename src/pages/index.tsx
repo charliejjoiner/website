@@ -256,13 +256,13 @@ export default function Home(props: Props) {
 				</div>
 			</div>
 
-			<div className="col-span-6 space-y-2 rounded-2xl bg-indigo-800 p-6 md:col-span-6">
+			<div className="col-span-6 space-y-2 rounded-2xl bg-indigo-800 p-6 text-white md:col-span-6">
 				<h2 className="font-title text-xl font-bold">
 					Hello world <span className="inline dark:hidden">⭐</span>
 					<span className="hidden dark:inline">⭐</span>
 				</h2>
 
-				<p className="text-white">
+				<p>
 					My name is Charlie, a recent graduate of The University of Kent in Computer Systems Engineering. I've been
 					programming for as long as I can remember, Ive programmed from Arduino to RTOS RFID race timing systems but I
 					enjoy web development the most.
