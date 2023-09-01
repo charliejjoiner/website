@@ -27,7 +27,7 @@ export default api({
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
-				content: 'contact form submission',
+				content: '<@121672207800860677> Contact form submission',
 				embeds: [
 					{
 						description: body.body,
