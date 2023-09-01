@@ -262,7 +262,7 @@ export default function Home(props: Props) {
 					<span className="hidden dark:inline">⭐</span>
 				</h2>
 
-				<p>
+				<p className="text-white">
 					My name is Charlie, a recent graduate of The University of Kent in Computer Systems Engineering. I've been
 					programming for as long as I can remember, Ive programmed from Arduino to RTOS RFID race timing systems but I
 					enjoy web development the most.
