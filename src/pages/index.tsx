@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import dayjs from 'dayjs';
 import type {GetStaticProps} from 'next';
 import Link from 'next/link';
 import {HiOutlineExternalLink} from 'react-icons/hi';
