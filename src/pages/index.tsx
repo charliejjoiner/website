@@ -26,7 +26,6 @@ import {Time} from '../components/time';
 import {useUpdatingLanyard} from '../hooks/lanyard';
 import matrix from '../images/matrix.gif';
 import me from '../images/me.jpg';
-import {PartialBlogPost, getRecentBlogPosts} from '../server/blog';
 import {env} from '../server/env';
 import {getLanyard} from '../server/lanyard';
 import {age, discordId} from '../utils/constants';
@@ -35,22 +34,17 @@ import {formatList} from '../utils/lists';
 export interface Props {
 	lanyard: Data;
 	location: string;
-	recentBlogPosts: PartialBlogPost[];
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
 	const lanyard = await getLanyard(discordId);
 	const location = lanyard.kv.location ?? env.DEFAULT_LOCATION;
 
-	const allBlogPosts = await getRecentBlogPosts();
-	const recentBlogPosts = allBlogPosts.sort((a, b) => dayjs(b.date).unix() - dayjs(a.date).unix()).slice(0, 3);
-
 	return {
 		revalidate: 10,
 		props: {
 			location,
 			lanyard,
-			recentBlogPosts,
 		},
 	};
 };
@@ -271,12 +265,13 @@ export default function Home(props: Props) {
 
 				<p>
 					My name is Charlie, a recent graduate of The University of Kent in Computer Systems Engineering. I've been
-					programming for as long as I can remember, and I'm currently freelancing and looking for work.
+					programming for as long as I can remember, Ive programmed from Arduino to RTOS RFID race timing systems but I
+					enjoy web development the most.
 				</p>
 
 				<p>
 					Beyond programming, I'm really interested in photography you can often catch me spending time out with my
-					camera. Either that or I'll be playing games like apex legends.
+					camera. Either that or I'll be playing games like apex legends & call of duty.
 				</p>
 			</div>
 
