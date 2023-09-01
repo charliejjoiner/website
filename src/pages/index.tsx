@@ -139,7 +139,7 @@ export default function Home(props: Props) {
 						<img
 							src={matrix.src}
 							alt="The Matrix scrolling characters effect"
-							className="absolute inset-0 h-full w-full object-cover object-center invert dark:brightness-[0.7] dark:invert-0"
+							className="absolute inset-0 h-full w-full object-cover object-center"
 						/>
 
 						<span
@@ -256,9 +256,9 @@ export default function Home(props: Props) {
 				</div>
 			</div>
 
-			<div className="col-span-6 space-y-2 rounded-2xl bg-yellow-200 p-6 dark:bg-indigo-800 md:col-span-6">
+			<div className="col-span-6 space-y-2 rounded-2xl bg-indigo-800 p-6 md:col-span-6">
 				<h2 className="font-title text-xl font-bold">
-					Hello world <span className="inline dark:hidden">🌻</span>
+					Hello world <span className="inline dark:hidden">⭐</span>
 					<span className="hidden dark:inline">⭐</span>
 				</h2>
 
